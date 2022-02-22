@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
+
+body {
+  background-color: #000000;
+  border: 2px solid white;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Noto Sans Display', sans-serif;
+  color:rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-decoration: None;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  margin: 20px 0;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  text-decoration: None;
 }
 
-.App-link {
-  color: #61dafb;
+li span {
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: None;
+  color:rgb(13, 126, 174);
+}
+
+a:hover {
+  text-decoration: None;
+  color:rgb(255, 255, 255);
+  transition: .5s;
+}
+
+button, input[type="submit"]{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #ffffff;
+  color:rgb(0, 0, 0);
+  opacity: 85%;
+  transition: .5s;
 }
